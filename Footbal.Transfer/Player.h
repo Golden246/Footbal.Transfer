@@ -12,6 +12,8 @@ public:
     int getTransferPrice() const;
     int getBaseSalary() const;
 
+    std::string getName() const;
+
 private:
     std::string position;
     int transferPrice;

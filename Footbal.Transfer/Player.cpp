@@ -18,3 +18,8 @@ int Player::getTransferPrice() const {
 int Player::getBaseSalary() const {
     return baseSalary;
 }
+
+std::string Player::getName() const
+{
+    return std::string();
+}

@@ -13,6 +13,7 @@ public:
     std::string getName() const;
     std::string getCountry() const;
     int getMoneyLoss() const;
+    
 
     void addPlayer(Player* player);
     void removePlayer(Player* player);
@@ -29,6 +30,25 @@ public:
 
     void paySalaries();
 
+    void setTrainer(Trainer* trainer);
+
+    Manager* getManager() const {
+        return manager;
+    }
+    void setManager(Manager* manager);
+
+    const std::vector<Player*>& getPlayers() const;
+
+    Trainer* getTrainer() const {
+        return trainer;
+    }
+
+    void payPlayers();
+    void payTrainer();
+    void payManager();
+
+
+ 
 private:
     std::string name;
     std::string country;
@@ -36,5 +56,7 @@ private:
     std::vector<Player*> players;
     std::vector<Trainer*> trainers;
     std::vector<Manager*> managers;
+    Trainer* trainer;
+    Manager* manager;
 };
 

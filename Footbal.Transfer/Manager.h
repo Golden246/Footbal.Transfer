@@ -4,13 +4,13 @@ class Manager :
     public Human
 {
 public:
-    Manager(const std::string& fullName, int age, int height, int salary);
+    Manager(const std::string& fullName, int age, int baseSalary, int height);
     virtual ~Manager();
 
-    int getSalary() const;
+    int getBaseSalary() const;
 
 private:
-    int salary;
+    int baseSalary;
 
 };
 

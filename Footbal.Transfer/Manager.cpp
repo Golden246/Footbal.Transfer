@@ -1,10 +1,11 @@
 #include "Manager.h"
 
-Manager::Manager(const std::string& fullName, int age, int height, int salary)
-    : Human(fullName, age, height), salary(salary) {}
+Manager::Manager(const std::string& fullName, int age,int baseSalary, int height)
+    : Human (fullName, age, height), baseSalary(baseSalary) {}
 
 Manager::~Manager() {}
 
-int Manager::getSalary() const {
-    return salary;
+
+int Manager::getBaseSalary() const {
+    return baseSalary;
 }
